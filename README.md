@@ -6,7 +6,7 @@ Um shell, mais simples que aquele executado num sistema Unix, deverá ser implem
 
 Mais de um comando pode ser apresentado por linha de comando, com o ponto-e-vírgula (;) separando cada um. Por exemplo, se a/o usuária/o digitar
 
-myLogin seq> /bin/ls; /bin/ps	(1)
+* myLogin seq> /bin/ls; /bin/ps	(1)
 
 , o shell deve executar ambos os comandos. Contudo, a execução irá depender do estilo (style) do shell: sequencial ou paralelo. No primeiro, cada ação deve ocorrer uma por vez, da esquerda para a direita, num mesmo processo filho. Assim, no exemplo (1), primeiro o ls deve ser executado, e quando finalizado, o ps. No estilo paralelo, ambas ações devem ser executadas em paralelo, por exemplo:
 
