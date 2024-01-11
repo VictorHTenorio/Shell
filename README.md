@@ -69,11 +69,13 @@ O shell ainda deve dar suporte:
 
 Algumas especificações:
 
-<b>1.	O programa deve usar fork(), exec(), wait(), dup2(), pipe(), pthread_create() e pthread_join(). O shell será um processo pai que executa, através de processos filhos (ou threads), o que for apresentado na linha de comando, seja digitada/a pela/o usuária/a ou lida do arquivo
+<b>
+1.	O programa deve usar fork(), exec(), wait(), dup2(), pipe(), pthread_create() e pthread_join(). O shell será um processo pai que executa, através de processos filhos (ou threads), o que for apresentado na linha de comando, seja digitada/a pela/o usuária/a ou lida do arquivo
  
 2.	O programa deve ser implementado em C e ser executável em sistemas Linux, Unix ou macOS, com a compilação feita por Makefile, através simplesmente do comando make via terminal, e retornar o arquivo com nome shell executável;
 
-3.	A execução deve ser realizada utilizando comando ./shell [batchFile], em que o batchFile é opcional. Se o argumento não estiver presente, o shell deve executar no modo interativo. ATENÇÃO: o nome do arquivo de entrada não necessariamente será batchFile.</b>
+3.	A execução deve ser realizada utilizando comando ./shell [batchFile], em que o batchFile é opcional. Se o argumento não estiver presente, o shell deve executar no modo interativo. ATENÇÃO: o nome do arquivo de entrada não necessariamente será batchFile.
+</b>
 
 O programa não deve falhar se encontrar um erro, precisando checar todos os parâmetros antes de aceita-los. Assim, seu programa deve apresentar um mensagem de erro coerente, ou continuar o processamento ou sair, a depender das situações, descritas abaixo:
 
