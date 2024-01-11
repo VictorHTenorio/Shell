@@ -67,9 +67,9 @@ O shell ainda deve dar suporte:
 
 , em que é indicando o ID do processo (1234) e que é o primeiro colocado em background ([1]). Enquanto o comando estiver sendo executado em background, o prompt estará apto a aceitar novos comandos. Para o processo descrito em (8) retornar do background, deve-se digitar o comando fg 1 no prompt.
 
+<b>
 Algumas especificações:
 
-<b>
 1.	O programa deve usar fork(), exec(), wait(), dup2(), pipe(), pthread_create() e pthread_join(). O shell será um processo pai que executa, através de processos filhos (ou threads), o que for apresentado na linha de comando, seja digitada/a pela/o usuária/a ou lida do arquivo
  
 2.	O programa deve ser implementado em C e ser executável em sistemas Linux, Unix ou macOS, com a compilação feita por Makefile, através simplesmente do comando make via terminal, e retornar o arquivo com nome shell executável;
