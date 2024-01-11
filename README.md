@@ -1,6 +1,6 @@
 # Shell
 
-##Interpretador por linha de comando (shell)
+## Interpretador por linha de comando (shell)
 
 Um shell, mais simples que aquele executado num sistema Unix, deverá ser implementado nessa atividade, sendo este capaz de ser executado de duas formas: interativo ou batch. No primeiro, deve-se apresentar o prompt nomeado com o login de seu email, e a/o usuária/o do shell irá digitar o comando no prompt. No modo batch, o shell é iniciado tendo um arquivo como argumento (batchFile), e este contem uma lista de comandos que devem ser executados. Neste último modo, o prompt não será apresentado, no entanto deve-se imprimir no terminal os comandos lidos do batchFile antes de executá-los. Nos dois formatos, o shell será finalizado com o comando exit.
 
