@@ -77,7 +77,7 @@ Algumas especificações:
 O programa não deve falhar se encontrar um erro, precisando checar todos os parâmetros antes de aceita-los. Assim, seu programa deve apresentar um mensagem de erro coerente, ou continuar o processamento ou sair, a depender das situações, descritas abaixo:
 
 1.	imprimir uma mensagem e encerrar a execução quando:<br>
-•	um número incorreto de argumento para os comando shell for passado
+•	um número incorreto de argumento para os comando shell for passado<br>
 •	se o arquivo a se utilizado no modo batch não existir ou não puder ser aberto
 
 2.	imprimir uma mensagem de erro e continuar processando<br>
