@@ -1,4 +1,5 @@
 # Shell
+Projeto de um Shell em C desenvolvido para a disciplina Infraestrutura de Software
 
 ## Interpretador por linha de comando (shell)
 
