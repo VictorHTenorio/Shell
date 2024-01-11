@@ -13,7 +13,9 @@ Mais de um comando pode ser apresentado por linha de comando, com o ponto-e-vír
 
 , o shell deve executar ambos os comandos. Contudo, a execução irá depender do estilo (style) do shell: sequencial ou paralelo. No primeiro, cada ação deve ocorrer uma por vez, da esquerda para a direita, num mesmo processo filho. Assim, no exemplo (1), primeiro o ls deve ser executado, e quando finalizado, o ps. No estilo paralelo, ambas ações devem ser executadas em paralelo, por exemplo:
 
-* myLogin par> /bin/ls; /bin/ps	(2)
+<p align="center">
+  <b> myLogin par> /bin/ls; /bin/ps	(2)</b>
+</p>
 
 , nesse caso uma nova thread deve ser criada para cada comando, uma para o/bin/ls e outro para /bin/ps. Não há limites para o número de comando por linha.
 
@@ -22,21 +24,29 @@ Nos dois estilos, o prompt deve estar disponível apenas quando as duas ações 
 O shell ainda deve dar suporte:
 1.	pipe - a saída de um comando pode ser enviada como entrada de outro comando. Os comandos que estão sob o pipe estão separados pelo símbolo |. Por exemplo:
 
-* myLogin seq> ls -l | sort -k 5	(3)
+<p align="center">
+  <b> myLogin seq> ls -l | sort -k 5	(3)</b>
+</p>
 
 , em que a saída do ls -l será a entrada do comando sort.
  
 2.	redirecionamento de entrada e saída: a entrada e saída de comandos podem ser enviadas ou obtidas de arquivos usando o redirecionamento. Alguns exemplos:
 
-* myLogin seq> date > datefile	(4)
+<p align="center">
+  <b> myLogin seq> date > datefile	(4)</b>
+</p>
 
 , em que a saída do comando date é salvo no arquivo datefile
 
-* myLogin seq> a.out < inputifle	(5)
+<p align="center">
+  <b> myLogin seq> a.out < inputifle	(5)</b>
+</p>
 
 , em que o programa a.out recebe as entradas a partir do conteúdo do inputfile
 
-* myLogin seq> sort file.txt >> datafile	(6)
+<p align="center">
+  <b> myLogin seq> sort file.txt >> datafile	(6)</b>
+</p>
 
 , em que o comando sort adiciona sua saída no fim do arquivo datafile
 
@@ -44,11 +54,15 @@ O shell ainda deve dar suporte:
 
 4.	executar comando em background através do caractere & ao fim do comando. Por exemplo, ao executar o comando (7)
 
-* myLogin seq> /bin/ls &	(7)
+<p align="center">
+  <b> myLogin seq> /bin/ls &	(7)</b>
+</p>
 
 , a ação é colocada em background, e a informação sobre a mesma é apresentada no prompt:
 
-* myLogin par> [1] 1234	(8)
+<p align="center">
+  <b> myLogin par> [1] 1234	(8)</b>
+</p>
 
 , em que é indicando o ID do processo (1234) e que é o primeiro colocado em background ([1]). Enquanto o comando estiver sendo executado em background, o prompt estará apto a aceitar novos comandos. Para o processo descrito em (8) retornar do background, deve-se digitar o comando fg 1 no prompt.
 
